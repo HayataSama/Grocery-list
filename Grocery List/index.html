@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="my-container">
+    <select name="title-select" id="title-select">
+      <option value="all" default="true">همه دسته ها</option>
+      <option value="grocery">سوپر مارکت</option>
+      <option value="fruit">میوه فروشی</option>
+      <option value="drug-store">داروخانه</option>
+      <option value="other">غیره</option>
+    </select>
+    <div class="main">
+      <div class="table-header">
+        <div>عنوان</div>
+        <div>تعداد</div>
+        <div>دسته</div>
+        <div>ویرایش</div>
+      </div>
+      <div id="list-content">
+
+      </div>
+    </div>
+    <div class="footer">
+      <button type="button" name="button" data-toggle="modal" data-target="#add-item-modal"><i class="fas fa-plus"></i> اضافه کردن کالا</button>
+    </div>
+  </div>
+  <!-- Modal-Settings -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+          <h4 class="modal-title">ویرایش</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="" value="" placeholder="نام محصول" id="name-edit">
+          <input type="number" name="" value="" placeholder="تعداد" id="count-edit">
+          <select class="weight-select" name="weight-select" id="weight-edit">
+            <option value="kg">کیلوگرم</option>
+            <option value="g">گرم</option>
+            <option value="piece">عدد</option>
+            <option value="pack">بسته</option>
+          </select>
+          <button type="button" class="my-btn1">
+            <i class="fas fa-check"></i>
+          </button>
+          <button type="button" class="my-btn1">
+            <i class="far fa-trash-alt"></i>
+          </button>
+          <button type="button" class="my-btn1">
+            <i class="fas fa-exclamation"></i>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default my-close-btn" data-dismiss="modal">تایید</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Modal-Add-Item -->
+  <div class="modal fade" id="add-item-modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">اضافه کردن کالا</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="" value="" placeholder="نام محصول" id="name">
+          <input type="number" name="" value="" placeholder="تعداد" id="count">
+          <select class="weight-select" name="weight-select" id="weight">
+            <option value="کیلوگرم">کیلوگرم</option>
+            <option value="گرم">گرم</option>
+            <option value="عدد">عدد</option>
+            <option value="بسته">بسته</option>
+          </select>
+          <select name="title-select" class="weight-select" id="cat-select">
+            <option value="all" default="true">همه دسته ها</option>
+            <option value="grocery">سوپر مارکت</option>
+            <option value="fruit">میوه فروشی</option>
+            <option value="drug-store">داروخانه</option>
+            <option value="other">غیره</option>
+          </select>
+          <button type="button" class="my-btn1">
+            <i class="fas fa-exclamation" id="priority"></i>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default my-close-btn" data-dismiss="modal" id="add-item">اضافه</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

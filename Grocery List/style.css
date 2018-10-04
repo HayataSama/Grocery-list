@@ -1,0 +1,222 @@
+@font-face {
+  font-family: isansdn;
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/eot/iransansdnbold.eot');
+  src: url('fonts/eot/iransansdnbold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('fonts/woff2/iransansdnbold.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/iransansdnbold.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/iransansdnbold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: isansdn;
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/eot/iransansdnlight.eot');
+  src: url('fonts/eot/iransansdnlight.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('fonts/woff2/iransansdnlight.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/iransansdnlight.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/iransansdnlight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: isansdn;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/eot/iransansdn.eot');
+  src: url('fonts/eot/iransansdn.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('fonts/woff2/iransansdn.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/iransansdn.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/iransansdn.ttf') format('truetype');
+}
+
+body {
+  font: 16px isasn;
+  direction: rtl
+}
+
+.footer button {
+  width: 100%;
+  height: 40px;
+  background: #8BC34A;
+  border: none;
+  border-radius: 10px;
+  font: 16px isansdn;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer button:focus {
+  outline: none;
+}
+
+.footer button:hover {}
+
+.my-container {
+  margin: 50px auto;
+  width: 816px;
+  height: auto;
+}
+
+.main {
+  margin: 20px 0;
+}
+
+.main .table-header {
+  background: #bdc3c7;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+}
+
+.main .table-header div {
+  width: 200px;
+  height: 30px;
+  font: 16px isansdn;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.main .table-data {
+  background: #ecf0f1;
+  width: 816px;
+  height: 40px;
+}
+
+.main .table-data div {
+  width: 200px;
+  height: 30px;
+  font: 14px isansdn;
+  display: inline-block;
+  line-height: 40px;
+  padding-right: 10px;
+}
+
+#title-select {
+  width: 100%;
+  height: 40px;
+  font: 16px isansdn;
+  border: none;
+  background: #bdc3c7;
+  border-radius: 10px;
+}
+
+#title-select:focus {
+  outline: none;
+}
+
+.my-btn, .my-btn1 {
+  background: none;
+  border: none;
+}
+
+.my-btn i, .my-btn1 i {
+  color: #2c3e50;
+  font-size: 25px;
+}
+
+.my-btn:focus, .my-btn1:focus {
+  outline: none;
+}
+
+.my-btn1 {
+  margin: 10px 0 0 0;
+}
+
+/* Modal-add */
+#add-item-modal .modal-header .modal-title {
+  margin-right: 20px;
+  font: bold 16px isansdn;
+}
+
+#add-item-modal .modal-header .close {
+  margin-top: 3px;
+}
+
+#add-item-modal .modal-body input[type=text], .weight-select {
+  border: none;
+  background: #ecf0f1;
+  border-radius: 300px;
+  width: 200px;
+  height: 30px;
+  padding: 0 5px;
+  font: 14px isansdn;
+}
+
+#add-item-modal .modal-body input[type=text]:focus, .weight-select:focus {
+  outline: none;
+  border: 1px solid #2c3e50;
+  background: #fff;
+}
+
+#add-item-modal .modal-body input[type=number] {
+  border: none;
+  background: #ecf0f1;
+  border-radius: 300px;
+  width: 200px;
+  height: 30px;
+  padding: 0 5px;
+  font: 14px isansdn;
+}
+
+#add-item-modal .modal-body input[type=number]:focus {
+  outline: none;
+  border: 1px solid #2c3e50;
+  background: #fff;
+}
+
+/* Modal-Settings */
+#myModal .modal-header .modal-title {
+  margin-right: 20px;
+  font: bold 16px isansdn;
+}
+
+#myModal .modal-header .close {
+  margin-top: 3px;
+}
+
+#myModal .modal-body input[type=text] {
+  border: none;
+  background: #ecf0f1;
+  border-radius: 300px;
+  width: 200px;
+  height: 30px;
+  padding: 0 5px;
+  font: 14px isansdn;
+}
+
+#myModal .modal-body input[type=text]:focus {
+  outline: none;
+  border: 1px solid #2c3e50;
+  background: #fff;
+}
+
+#myModal .modal-body input[type=number] {
+  border: none;
+  background: #ecf0f1;
+  border-radius: 300px;
+  width: 200px;
+  height: 30px;
+  padding: 0 5px;
+  font: 14px isansdn;
+}
+
+#myModal .modal-body input[type=number]:focus {
+  outline: none;
+  border: 1px solid #2c3e50;
+  background: #fff;
+}
+
+.my-close-btn {
+  font: bold 16px isansdn !important;
+}
