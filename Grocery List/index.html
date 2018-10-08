@@ -49,26 +49,22 @@
           <h4 class="modal-title">ویرایش</h4>
         </div>
         <div class="modal-body">
-          <input type="text" name="" value="" placeholder="نام محصول" id="name-edit">
-          <input type="number" name="" value="" placeholder="تعداد" id="count-edit">
+          <input type="number" name="" value="" id="count-edit">
           <select class="weight-select" name="weight-select" id="weight-edit">
-            <option value="kg">کیلوگرم</option>
-            <option value="g">گرم</option>
-            <option value="piece">عدد</option>
-            <option value="pack">بسته</option>
+            <option value="کیلوگرم">کیلوگرم</option>
+            <option value="گرم">گرم</option>
+            <option value="عدد">عدد</option>
+            <option value="بسته">بسته</option>
           </select>
-          <button type="button" class="my-btn1">
-            <i class="fas fa-check"></i>
-          </button>
-          <button type="button" class="my-btn1">
+          <button type="button" class="my-btn1" id="delete">
             <i class="far fa-trash-alt"></i>
           </button>
           <button type="button" class="my-btn1">
-            <i class="fas fa-exclamation"></i>
+            <i class="fas fa-exclamation" id="priority-edit"></i>
           </button>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default my-close-btn" data-dismiss="modal">تایید</button>
+          <button type="button" class="btn btn-default my-close-btn" id="save-changes">تایید</button>
         </div>
       </div>
 
@@ -86,7 +82,7 @@
         </div>
         <div class="modal-body">
           <input type="text" name="" value="" placeholder="نام محصول" id="name">
-          <input type="number" name="" value="" placeholder="تعداد" id="count">
+          <input type="number" name="" value="" id="count">
           <select class="weight-select" name="weight-select" id="weight">
             <option value="کیلوگرم">کیلوگرم</option>
             <option value="گرم">گرم</option>
